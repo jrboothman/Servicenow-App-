@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>10</order>
+        <role display_value="x_1563423_sparta_a.academy_admin" name="x_1563423_sparta_a.academy_admin">d263345283621210fe90c396feaad359</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-20 10:46:45</sys_created_on>
+        <sys_id>1a63345283621210fe90c396feaad35b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d263345283621210fe90c396feaad359</sys_name>
+        <sys_package display_value="Sparta Academy" source="x_1563423_sparta_a">0453b05283621210fe90c396feaad310</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Academy">0453b05283621210fe90c396feaad310</sys_scope>
+        <sys_update_name>sys_embedded_help_role_1a63345283621210fe90c396feaad35b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-20 10:46:45</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>
