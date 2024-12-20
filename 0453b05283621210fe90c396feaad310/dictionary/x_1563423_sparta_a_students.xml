@@ -2,6 +2,7 @@
     <element db_object_id="d517385683621210fe90c396feaad33e" label="Students" max_length="40" name="x_1563423_sparta_a_students" type="collection">
         <element label="First Name" max_length="40" name="first_name" type="string"/>
         <element label="Course" max_length="32" name="course" reference="x_1563423_sparta_a_courses" type="reference"/>
+        <element label="Email" max_length="40" name="email" type="string"/>
         <element label="Last Name" max_length="40" name="last_name" type="string"/>
         <index name="index">
             <element name="course"/>
