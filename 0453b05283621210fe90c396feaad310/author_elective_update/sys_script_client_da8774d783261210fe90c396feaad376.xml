@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>flag</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>flag client script</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+   var flagValue = newValue;
+	g_form.addInfoMessage(flagValue);
+   if(newValue == true){
+	g_form.addErrorMessage("the course is overbooked");
+   }
+   
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-23 13:42:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da8774d783261210fe90c396feaad376</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>flag client script</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Sparta Academy" source="x_1563423_sparta_a">0453b05283621210fe90c396feaad310</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Academy">0453b05283621210fe90c396feaad310</sys_scope>
+        <sys_update_name>sys_script_client_da8774d783261210fe90c396feaad376</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-23 13:49:25</sys_updated_on>
+        <table>x_1563423_sparta_a_courses</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Sparta Academy">0453b05283621210fe90c396feaad310</application>
+        <file_path/>
+        <instance_id>16e28e24eb8a9ed0e9bbfddacad0cdb1</instance_id>
+        <instance_name>dev290564</instance_name>
+        <name>sys_script_client_da8774d783261210fe90c396feaad376</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field&gt;flag&lt;/field&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;flag client script&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+   var flagValue = newValue;
+	g_form.addInfoMessage(flagValue);
+   if(newValue == true){
+	g_form.addErrorMessage("the course is overbooked");
+   }
+   
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-12-23 13:42:09&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;da8774d783261210fe90c396feaad376&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;flag client script&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Sparta Academy" source="x_1563423_sparta_a"&gt;0453b05283621210fe90c396feaad310&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Sparta Academy"&gt;0453b05283621210fe90c396feaad310&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_da8774d783261210fe90c396feaad376&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-12-23 13:49:25&lt;/sys_updated_on&gt;&lt;table&gt;x_1563423_sparta_a_courses&lt;/table&gt;&lt;type&gt;onChange&lt;/type&gt;&lt;ui_type&gt;0&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-167129815</payload_hash>
+        <record_name>flag client script</record_name>
+        <reverted_from/>
+        <source>011af85a83621210fe90c396feaad306</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-23 13:49:25</sys_created_on>
+        <sys_id>93f9749b83261210fe90c396feaad3a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>193f3c79e480000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-23 13:49:25</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>1bf9749b6e261210a5d177cd4fd221a5</update_guid>
+        <update_guid_history>1bf9749b6e261210a5d177cd4fd221a5:-167129815,afd9309bd4261210d19b1369b4ab8f40:-434921298,c799f45b5f2612100a3dd1ea09c5bb09:-130656954,c829781b7426121056bd08df02160539:-98313112,fc58f01b0026121014046646543168f7:811930734</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-12-23 13:55:33</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>7e7071564a8945128e813db9c3f66e11</sys_id>
+        <sys_metadata>da8774d783261210fe90c396feaad376</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>flag client script</sys_name>
+        <sys_package display_value="Sparta Academy" source="x_1563423_sparta_a">0453b05283621210fe90c396feaad310</sys_package>
+        <sys_parent display_value="Courses">d5a57cd283621210fe90c396feaad362</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Sparta Academy">0453b05283621210fe90c396feaad310</sys_scope>
+        <sys_scope_delete display_value="">54e77b798c7340c5b34097e5d4b59d09</sys_scope_delete>
+        <sys_update_name>sys_script_client_da8774d783261210fe90c396feaad376</sys_update_name>
+        <sys_update_version display_value="sys_script_client_da8774d783261210fe90c396feaad376">93f9749b83261210fe90c396feaad3a6</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-12-23 13:55:33</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

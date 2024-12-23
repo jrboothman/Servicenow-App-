@@ -4,42 +4,37 @@
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
-        <field>end_date</field>
+        <field/>
         <global>true</global>
         <isolate_script>true</isolate_script>
         <messages/>
-        <name>date warning client script</name>
+        <name>flag client script</name>
         <order/>
-        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
-   if (isLoading || newValue === '') {
-      return;
-   }
+        <script><![CDATA[function onLoad() {
+    var flagValue = g_form.getValue("flag");
 
-   var newEndDate  = new Date(newValue);
-   var currentDate = new Date();
+    if (flagValue === "true"){
+		g_form.addErrorMessage("the course is full");
+	}
 
-   if(newEndDate < currentDate){
-		g_form.addErrorMessage("The course end date cannot be before the start date");
-   }
-   
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2024-12-20 14:07:34</sys_created_on>
+        <sys_created_on>2024-12-23 13:59:05</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
-        <sys_id>715ed91683261210fe90c396feaad332</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>date warning client script</sys_name>
+        <sys_id>3f6bb01f83261210fe90c396feaad33c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>flag client script</sys_name>
         <sys_overrides/>
         <sys_package display_value="Sparta Academy" source="x_1563423_sparta_a">0453b05283621210fe90c396feaad310</sys_package>
         <sys_policy/>
         <sys_scope display_value="Sparta Academy">0453b05283621210fe90c396feaad310</sys_scope>
-        <sys_update_name>sys_script_client_715ed91683261210fe90c396feaad332</sys_update_name>
+        <sys_update_name>sys_script_client_3f6bb01f83261210fe90c396feaad33c</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2024-12-23 11:27:29</sys_updated_on>
+        <sys_updated_on>2024-12-23 14:03:18</sys_updated_on>
         <table>x_1563423_sparta_a_courses</table>
-        <type>onChange</type>
+        <type>onLoad</type>
         <ui_type>0</ui_type>
         <view/>
     </sys_script_client>

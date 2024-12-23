@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="d5a57cd283621210fe90c396feaad362" label="Courses" max_length="40" name="x_1563423_sparta_a_courses" type="collection">
+        <element label="Flag" max_length="40" name="flag" type="boolean"/>
         <element attributes="edge_encryption_enabled=true" label="End Date" max_length="40" name="end_date" type="glide_date_time"/>
         <element label="Is Active" max_length="40" name="is_active" type="boolean"/>
         <element label="Completed" max_length="40" name="completed" type="boolean"/>
